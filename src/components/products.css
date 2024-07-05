@@ -1,0 +1,96 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  height: 300px;
+  height: auto;
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-family: arial;
+  border-radius: .3em;
+  background-color: rgb(250, 250, 250);
+  overflow: hidden;
+}
+body{
+  background-color: #a1a1a8;
+}
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+img{
+   margin-top: 30px;
+    max-width: 150px;
+    /* Increased image size */
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10%;
+  
+    /* Enhanced box shadow */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    /* Added box shadow transition */
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #140a9f;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
+  border-radius: .2em;
+  box-shadow: 5px,5px,5px #7c7b7e;
+}
+
+.title{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-weight: 700;
+}
+
+.description{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: 500;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+
+/* HTML: <div class="loader"></div> */
+.loader1{
+  margin: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+ 
+}
+
+
+.loader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 15px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  animation: l5 1s infinite linear alternate;
+}
+@keyframes l5 {
+    0%  {box-shadow: 20px 0 #000, -20px 0 #0002;background: #000 }
+    33% {box-shadow: 20px 0 #000, -20px 0 #0002;background: #0002}
+    66% {box-shadow: 20px 0 #0002,-20px 0 #000; background: #0002}
+    100%{box-shadow: 20px 0 #0002,-20px 0 #000; background: #000 }
+}
