@@ -10,6 +10,8 @@ import { BrowserRouter as Router, Routes,Route } from 'react-router-dom';
 import Category from './Category';
 import CategoryProduct from './CategoryProduct';
 import Account from './Account';
+import Checkout from './Checkout';
+import Signup from './Signup';
 const Home = () => {
   return (
   
@@ -26,6 +28,8 @@ const Home = () => {
    <Route path="/categories" exact element={<Category/>} />
    <Route path="/categories/:category" element={<CategoryProduct/>} />
    <Route path="/account"  element={<Account/>} />
+   <Route path="/payment"  element={<Checkout/>} />
+   <Route path="/sign_up"  element={<Signup/>} />
   </Routes>
   </Router>
     

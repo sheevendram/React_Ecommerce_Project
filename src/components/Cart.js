@@ -79,13 +79,13 @@ const Cart = ({
                 ₹{totalAmountCalculationFunction()}
             </p>
         </div>
-        <button
+       <a href ="/payment"> <button
             className="checkout-button"
             disabled={cartCourses.length === 0 || 
             totalAmountCalculationFunction() === 0}
         >
             Proceed to Payment
-        </button>
+        </button></a>
     </div>
 </div>
             )}

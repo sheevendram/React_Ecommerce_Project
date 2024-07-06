@@ -29,7 +29,7 @@ const Category = () => {
     };
 
     fetchData();
-  }, [data]);
+  }, []);
  
   console.log("courses",data)
  
@@ -48,7 +48,7 @@ const Category = () => {
 
         <div className='products'>
           {data.map((item) => (
-           <div className="card" key={item.id}  >
+           <div className="card" key={item}  >
            
            <a href={`/categories/${item}`}><h1 className='title'>{item}</h1></a>
            
